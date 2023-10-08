@@ -98,51 +98,7 @@ router.get('/user', isAuthenticated, (req, res) => {
 });
 
 
-// Update user profile
-router.put('/user/:userId', isAuthenticated, async (req, res) => {
-  const userId = req.params.userId; // Get the user ID from the route parameters
 
-  // Check if the authenticated user matches the user whose profile is being updated
-  if (req.user.userId !== userId) {
-    return res.status(403).json({ error: 'Forbidden: You can only update your own profile' });
-  }
-
-  try {
-    // Update the user's profile in the database based on the request body
-    // Example: const updatedUser = await User.findByIdAndUpdate(userId, req.body, { new: true });
-
-    // You can also update specific fields like this:
-    // Example: const updatedUser = await User.findByIdAndUpdate(userId, { username: req.body.username }, { new: true });
-
-    // Respond with the updated user data
-    // res.status(200).json(updatedUser);
-    res.status(200).json({ message: 'User profile updated successfully' });
-  } catch (error) {
-    console.error('Error:', error);
-    res.status(500).json({ error: 'Failed to update user profile' });
-  }
-});
-
-// Delete user profile
-router.delete('/user/:userId', isAuthenticated, async (req, res) => {
-  const userId = req.params.userId; // Get the user ID from the route parameters
-
-  // Check if the authenticated user matches the user whose profile is being deleted
-  if (req.user.userId !== userId) {
-    return res.status(403).json({ error: 'Forbidden: You can only delete your own profile' });
-  }
-
-  try {
-    // Delete the user's profile from the database
-    // Example: await User.findByIdAndRemove(userId);
-
-    // Respond with a success message
-    res.status(200).json({ message: 'User profile deleted successfully' });
-  } catch (error) {
-    console.error('Error:', error);
-    res.status(500).json({ error: 'Failed to delete user profile' });
-  }
-});
 
 
 
