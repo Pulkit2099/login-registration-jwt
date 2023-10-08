@@ -1,0 +1,64 @@
+/* login.css */
+
+/* Styles for the login container */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-image: url(./bg2.jpg);
+    background-size: cover; /* Cover the entire container with the background image */
+    background-position: center; /* Center the background image horizontally and vertically */
+  }
+  
+h2{
+
+    color:rgb(107, 75, 27);
+}
+  
+  /* Styles for form elements */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .btn-primary {
+    background-color: #ff001ee4;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Styles for the "Don't have an account" link */
+  p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  p a {
+    color: rgb(239, 7, 53);
+    text-decoration: none;
+  }
+  

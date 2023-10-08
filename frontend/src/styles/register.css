@@ -1,0 +1,52 @@
+/* RegisterForm.css */
+
+.registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+    background-image: url(./bg3.jpg);
+    background-size: cover; /* Cover the entire container with the background image */
+    background-position: center; /* Center the background image horizontally and vertically */
+  }
+  
+  .form-container {
+    /* background-color: #ffffff; */
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .registration-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: crimson
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+  }
+  
+  .btn-primary {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
